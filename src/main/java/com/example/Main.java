@@ -1,7 +1,11 @@
 package com.example;
 
 import com.example.problems.FindingDuplicates;
+import com.example.problems.Pairs;
 import com.example.problems.TwoSum;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class Main {
 
@@ -37,5 +41,13 @@ public class Main {
         System.out.println("Input: nums: [4,3,2,7,8,2,3,1]");
         System.out.println("Output: " + FindingDuplicates.solution(new int[]{4,3,2,7,8,2,3,1}));
         hr();
+        //3. Pairs
+        var pairInput = new int[]{-1 -4, 0, -5, 10, 2, 3, 4, 5};
+        System.out.println("3. Pairs");
+        System.out.print("Input: ");
+        printArray(pairInput);
+        System.out.println("Output: " + Pairs.solution(pairInput, 4));
+        hr();
+
     }
 }
