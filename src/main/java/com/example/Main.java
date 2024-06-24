@@ -2,6 +2,7 @@ package com.example;
 
 import com.example.problems.FindingDuplicates;
 import com.example.problems.Pairs;
+import com.example.problems.RomanToInteger;
 import com.example.problems.SquaresOfSortedArray;
 import com.example.problems.TwoSum;
 
@@ -54,7 +55,12 @@ public class Main {
         System.out.print("Output: ");
         printArray(SquaresOfSortedArray.solution(sortedSquaresInput));
         hr();
-
+        //5. Roman to Integer
+        var romanToIntegerInput = "MCMXCIV";
+        System.out.println("5. Roman to Integer");
+        System.out.println("Input: " + romanToIntegerInput);
+        System.out.println("Output: " + RomanToInteger.solution(romanToIntegerInput));
+        hr();
 
 
     }
