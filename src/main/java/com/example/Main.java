@@ -1,5 +1,6 @@
 package com.example;
 
+import com.example.problems.BestTimeBuySellStock;
 import com.example.problems.FindingDuplicates;
 import com.example.problems.Pairs;
 import com.example.problems.RomanToInteger;
@@ -76,6 +77,16 @@ public class Main {
         System.out.println("Input: " + validParenthesesInput2);
         System.out.println("Output: " + ValidParentheses.solution(validParenthesesInput2));
         hr();
+
+        //7. Best time to buy and sell stocks
+        var bestTimeToBuyAndSellInput = new int[]{7,1,5,3,6,4};
+        System.out.println("7. Best time to buy and sell stocks");
+        System.out.print("Input: ");
+        printArray(bestTimeToBuyAndSellInput);
+        System.out.println("Output: " + BestTimeBuySellStock.solution(bestTimeToBuyAndSellInput));
+        hr();
+
+
 
     }
 }
