@@ -3,10 +3,13 @@ package com.example;
 import com.example.problems.BestTimeBuySellStock;
 import com.example.problems.FindingDuplicates;
 import com.example.problems.Pairs;
+import com.example.problems.ReverseString;
 import com.example.problems.RomanToInteger;
 import com.example.problems.SquaresOfSortedArray;
 import com.example.problems.TwoSum;
 import com.example.problems.ValidParentheses;
+
+import java.util.Arrays;
 
 public class Main {
 
@@ -86,7 +89,11 @@ public class Main {
         System.out.println("Output: " + BestTimeBuySellStock.solution(bestTimeToBuyAndSellInput));
         hr();
 
-
+        var reverseStringInput = new char[]{'h', 'e', 'l', 'l', 'o'};
+        System.out.println("8. Reverse string");
+        System.out.println("Input: " + String.valueOf(reverseStringInput));
+        System.out.println("Output: " + String.valueOf(ReverseString.solution(reverseStringInput)));
+        hr();
 
     }
 }
