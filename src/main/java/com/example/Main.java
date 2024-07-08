@@ -5,6 +5,7 @@ import com.example.problems.Pairs;
 import com.example.problems.RomanToInteger;
 import com.example.problems.SquaresOfSortedArray;
 import com.example.problems.TwoSum;
+import com.example.problems.ValidParentheses;
 
 public class Main {
 
@@ -61,7 +62,12 @@ public class Main {
         System.out.println("Input: " + romanToIntegerInput);
         System.out.println("Output: " + RomanToInteger.solution(romanToIntegerInput));
         hr();
-
+        //6. Valid Parentheses
+        var validParenthesesInput = "())";
+        System.out.println("6. Valid Parentheses");
+        System.out.println("Input: " + validParenthesesInput);
+        System.out.println("Output: " + ValidParentheses.solution(validParenthesesInput));
+        hr();
 
     }
 }
