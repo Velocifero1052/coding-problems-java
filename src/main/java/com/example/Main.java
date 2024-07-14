@@ -5,6 +5,7 @@ import com.example.problems.FindingDuplicates;
 import com.example.problems.Pairs;
 import com.example.problems.ReverseString;
 import com.example.problems.RomanToInteger;
+import com.example.problems.SingleNumber;
 import com.example.problems.SquaresOfSortedArray;
 import com.example.problems.TwoSum;
 import com.example.problems.ValidPalindrome;
@@ -97,10 +98,17 @@ public class Main {
 
         //9. Valid palindrome
         System.out.println("9. Valid palindrome");
-        var validPalindromInput = "A man, a plan, a canal: Panama";
-        System.out.printf("Input: \"%s\"\n", validPalindromInput);
-        System.out.println("Output: " + ValidPalindrome.solution(validPalindromInput));
+        var validPalindromeInput = "A man, a plan, a canal: Panama";
+        System.out.printf("Input: \"%s\"\n", validPalindromeInput);
+        System.out.println("Output: " + ValidPalindrome.solution(validPalindromeInput));
         hr();
 
+        //Single number
+        System.out.println("10. Single number");
+        var singleNumberInput = new int[]{ 4, 1, 2, 1, 2 };
+        System.out.print("Input: ");
+        printArray(singleNumberInput);
+        System.out.println("Output: " + SingleNumber.solution(singleNumberInput));
+        hr();
     }
 }
