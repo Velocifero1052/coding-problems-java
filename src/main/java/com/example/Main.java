@@ -7,9 +7,8 @@ import com.example.problems.ReverseString;
 import com.example.problems.RomanToInteger;
 import com.example.problems.SquaresOfSortedArray;
 import com.example.problems.TwoSum;
+import com.example.problems.ValidPalindrome;
 import com.example.problems.ValidParentheses;
-
-import java.util.Arrays;
 
 public class Main {
 
@@ -89,10 +88,18 @@ public class Main {
         System.out.println("Output: " + BestTimeBuySellStock.solution(bestTimeToBuyAndSellInput));
         hr();
 
+        //8. Reverse String
         System.out.println("8. Reverse string");
         var reverseStringInput = new char[]{'h', 'e', 'l', 'l', 'o'};
         System.out.println("Input: " + String.valueOf(reverseStringInput));
         System.out.println("Output: " + String.valueOf(ReverseString.solution(reverseStringInput)));
+        hr();
+
+        //9. Valid palindrome
+        System.out.println("9. Valid palindrome");
+        var validPalindromInput = "A man, a plan, a canal: Panama";
+        System.out.printf("Input: \"%s\"\n", validPalindromInput);
+        System.out.println("Output: " + ValidPalindrome.solution(validPalindromInput));
         hr();
 
     }
