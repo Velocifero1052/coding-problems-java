@@ -48,16 +48,16 @@ public class Main {
         hr();
 
         //3. Pairs
-        var pairInput = new int[]{-1 -4, 0, -5, 10, 2, 3, 4, 5, 2, 1, 3};
         System.out.println("3. Pairs");
+        var pairInput = new int[]{-1 -4, 0, -5, 10, 2, 3, 4, 5, 2, 1, 3};
         System.out.print("Input: ");
         printArray(pairInput);
         System.out.println("Output: " + Pairs.solution(pairInput, 4));
         hr();
 
         //4. Squares of a Sorted Array
-        var sortedSquaresInput = new int[]{-7,-3,2,3,11};
         System.out.println("4. Squares of a Sorted Array");
+        var sortedSquaresInput = new int[]{-7,-3,2,3,11};
         System.out.print("Input: ");
         printArray(sortedSquaresInput);
         System.out.print("Output: ");
@@ -65,15 +65,15 @@ public class Main {
         hr();
 
         //5. Roman to Integer
-        var romanToIntegerInput = "MCMXCIV";
         System.out.println("5. Roman to Integer");
+        var romanToIntegerInput = "MCMXCIV";
         System.out.println("Input: " + romanToIntegerInput);
         System.out.println("Output: " + RomanToInteger.solution(romanToIntegerInput));
         hr();
 
         //6. Valid parentheses
-        var validParenthesesInput = "{}[]()";
         System.out.println("6. Valid parentheses");
+        var validParenthesesInput = "{}[]()";
         System.out.println("Input: " + validParenthesesInput);
         System.out.println("Output: " + ValidParentheses.solution(validParenthesesInput));
         var validParenthesesInput2 = "{}}";
@@ -82,15 +82,15 @@ public class Main {
         hr();
 
         //7. Best time to buy and sell stocks
-        var bestTimeToBuyAndSellInput = new int[]{7,1,5,3,6,4};
         System.out.println("7. Best time to buy and sell stocks");
+        var bestTimeToBuyAndSellInput = new int[]{7,1,5,3,6,4};
         System.out.print("Input: ");
         printArray(bestTimeToBuyAndSellInput);
         System.out.println("Output: " + BestTimeBuySellStock.solution(bestTimeToBuyAndSellInput));
         hr();
 
-        var reverseStringInput = new char[]{'h', 'e', 'l', 'l', 'o'};
         System.out.println("8. Reverse string");
+        var reverseStringInput = new char[]{'h', 'e', 'l', 'l', 'o'};
         System.out.println("Input: " + String.valueOf(reverseStringInput));
         System.out.println("Output: " + String.valueOf(ReverseString.solution(reverseStringInput)));
         hr();
