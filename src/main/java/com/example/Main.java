@@ -1,6 +1,7 @@
 package com.example;
 
 import com.example.problems.BestTimeBuySellStock;
+import com.example.problems.ContainsDuplicates;
 import com.example.problems.FindingDuplicates;
 import com.example.problems.Pairs;
 import com.example.problems.ReverseString;
@@ -103,12 +104,24 @@ public class Main {
         System.out.println("Output: " + ValidPalindrome.solution(validPalindromeInput));
         hr();
 
-        //Single number
+        //10. Single number
         System.out.println("10. Single number");
         var singleNumberInput = new int[]{ 4, 1, 2, 1, 2 };
         System.out.print("Input: ");
         printArray(singleNumberInput);
         System.out.println("Output: " + SingleNumber.solution(singleNumberInput));
         hr();
+
+        //11. Contains duplicate
+        System.out.println("11. Contains duplicates");
+        var containsDuplicateInput = new int[]{1,2,3,1};
+        System.out.print("Input: ");
+        printArray(containsDuplicateInput);
+        System.out.println("Output: " + ContainsDuplicates.solution(containsDuplicateInput));
+        hr();
+
+
+
+
     }
 }
