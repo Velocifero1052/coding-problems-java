@@ -3,6 +3,7 @@ package com.example;
 import com.example.problems.BestTimeBuySellStock;
 import com.example.problems.ContainsDuplicates;
 import com.example.problems.FindingDuplicates;
+import com.example.problems.FirstUniqueCharacter;
 import com.example.problems.Pairs;
 import com.example.problems.ReverseString;
 import com.example.problems.RomanToInteger;
@@ -119,6 +120,14 @@ public class Main {
         printArray(containsDuplicateInput);
         System.out.println("Output: " + ContainsDuplicates.solution(containsDuplicateInput));
         hr();
+
+        //12. First unique character
+        System.out.println("12. First unique character");
+        var firstUniqueCharacterInput = "loveleetcode";
+        System.out.printf("Input: \"%s\"\n", firstUniqueCharacterInput);
+        System.out.println("Output: " + FirstUniqueCharacter.solution(firstUniqueCharacterInput));
+        hr();
+
 
 
 
