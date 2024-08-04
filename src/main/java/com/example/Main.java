@@ -9,6 +9,7 @@ import com.example.problems.Pairs;
 import com.example.problems.ReverseString;
 import com.example.problems.RomanToInteger;
 import com.example.problems.SingleNumber;
+import com.example.problems.SqrtX;
 import com.example.problems.SquaresOfSortedArray;
 import com.example.problems.TwoSum;
 import com.example.problems.ValidPalindrome;
@@ -140,9 +141,14 @@ public class Main {
         printArray(arr2);
         System.out.print("Output: ");
         printArray(IntersectionOfTwoArrays.solution(arr1, arr2));
+        hr();
 
-
-
+        //14. SqrtX
+        System.out.println("14. SqrtX");
+        var input = 6;
+        System.out.println("Input: " + input);
+        System.out.println("Output: " + SqrtX.solution(input));
+        hr();
 
     }
 }
