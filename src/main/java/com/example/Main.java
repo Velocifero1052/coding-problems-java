@@ -4,6 +4,7 @@ import com.example.problems.BestTimeBuySellStock;
 import com.example.problems.ContainsDuplicates;
 import com.example.problems.FindingDuplicates;
 import com.example.problems.FirstUniqueCharacter;
+import com.example.problems.IntersectionOfTwoArrays;
 import com.example.problems.Pairs;
 import com.example.problems.ReverseString;
 import com.example.problems.RomanToInteger;
@@ -12,6 +13,8 @@ import com.example.problems.SquaresOfSortedArray;
 import com.example.problems.TwoSum;
 import com.example.problems.ValidPalindrome;
 import com.example.problems.ValidParentheses;
+
+import java.sql.SQLOutput;
 
 public class Main {
 
@@ -128,6 +131,15 @@ public class Main {
         System.out.println("Output: " + FirstUniqueCharacter.solution(firstUniqueCharacterInput));
         hr();
 
+        //13. Intersection of two arrays
+        System.out.println("13. Intersection of two arrays");
+        var arr1 = new int[]{1, 2, 2 ,1};
+        var arr2 = new int[]{2, 2};
+        System.out.println("Input: ");
+        printArray(arr1);
+        printArray(arr2);
+        System.out.print("Output: ");
+        printArray(IntersectionOfTwoArrays.solution(arr1, arr2));
 
 
 
