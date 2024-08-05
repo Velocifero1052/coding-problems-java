@@ -5,6 +5,7 @@ import com.example.problems.ContainsDuplicates;
 import com.example.problems.FindingDuplicates;
 import com.example.problems.FirstUniqueCharacter;
 import com.example.problems.IntersectionOfTwoArrays;
+import com.example.problems.MissingNumber;
 import com.example.problems.Pairs;
 import com.example.problems.ReverseString;
 import com.example.problems.RomanToInteger;
@@ -14,8 +15,6 @@ import com.example.problems.SquaresOfSortedArray;
 import com.example.problems.TwoSum;
 import com.example.problems.ValidPalindrome;
 import com.example.problems.ValidParentheses;
-
-import java.sql.SQLOutput;
 
 public class Main {
 
@@ -148,6 +147,15 @@ public class Main {
         var input = 6;
         System.out.println("Input: " + input);
         System.out.println("Output: " + SqrtX.solution(input));
+        hr();
+
+        //15. Missing Number
+        System.out.println("15. Missing number");
+        var missingNumberInput = new int[]{3, 0, 1};
+        System.out.print("Input: ");
+        printArray(missingNumberInput);
+        System.out.println("Output: " + MissingNumber.solution(missingNumberInput));
+        System.out.println("XOR solution output: " + MissingNumber.xorSolution(missingNumberInput));
         hr();
 
     }
