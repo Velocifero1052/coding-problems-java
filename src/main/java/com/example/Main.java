@@ -1,6 +1,7 @@
 package com.example;
 
 import com.example.problems.BestTimeBuySellStock;
+import com.example.problems.ClimbingStairs;
 import com.example.problems.ContainsDuplicates;
 import com.example.problems.FindingDuplicates;
 import com.example.problems.FirstUniqueCharacter;
@@ -157,6 +158,24 @@ public class Main {
         System.out.println("Output: " + MissingNumber.solution(missingNumberInput));
         System.out.println("XOR solution output: " + MissingNumber.xorSolution(missingNumberInput));
         hr();
+
+        //16. Climbing steps
+        System.out.println("16. Climbing steps");
+        var climbingStepsInput = 3;
+        System.out.println("Input: " + climbingStepsInput);
+        System.out.println("Output: " + ClimbingStairs.solution(climbingStepsInput));
+        hr();
+
+        //17. Plus one
+        System.out.println("17. Plus one");
+        var plusOneInput = new int[]{ 9 };
+        System.out.print("Input: ");
+        printArray(plusOneInput);
+
+
+
+
+
 
     }
 }
