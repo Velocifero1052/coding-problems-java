@@ -1,11 +1,13 @@
 package com.example;
 
+import com.example.models.ListNode;
 import com.example.problems.BestTimeBuySellStock;
 import com.example.problems.ClimbingStairs;
 import com.example.problems.ContainsDuplicates;
 import com.example.problems.FindingDuplicates;
 import com.example.problems.FirstUniqueCharacter;
 import com.example.problems.IntersectionOfTwoArrays;
+import com.example.problems.LinkedListCycle;
 import com.example.problems.MissingNumber;
 import com.example.problems.Pairs;
 import com.example.problems.ReverseString;
@@ -16,6 +18,8 @@ import com.example.problems.SquaresOfSortedArray;
 import com.example.problems.TwoSum;
 import com.example.problems.ValidPalindrome;
 import com.example.problems.ValidParentheses;
+
+import java.util.LinkedList;
 
 public class Main {
 
@@ -171,11 +175,74 @@ public class Main {
         var plusOneInput = new int[]{ 9 };
         System.out.print("Input: ");
         printArray(plusOneInput);
+        hr();
 
 
-
-
+        System.out.println("18. Testing linked list");
+        var linkedListCycleInput = createListNodeCycle();
+        System.out.println("Cycled Input: " + linkedListAsString(linkedListCycleInput, 10));
+        System.out.println("Output cache algorithm: " + LinkedListCycle.cachingSolution(linkedListCycleInput));
+        System.out.println("Output floyd algorithm: " + LinkedListCycle.floydCycleSolution(linkedListCycleInput));
+        var linkedListNoCycleInput = createListNodeNoCycle();
+        System.out.println("No cycle input: " + linkedListAsString(linkedListNoCycleInput, 10));
+        System.out.println("Output cache algorithm: " + LinkedListCycle.cachingSolution(linkedListNoCycleInput));
+        System.out.println("Output floyd algorithm: " + LinkedListCycle.floydCycleSolution(linkedListNoCycleInput));
+        hr();
 
 
     }
+
+
+    public static String linkedListAsString(ListNode head, int limit) {
+        boolean first = true;
+
+        var node = head;
+        var sb = new StringBuilder();
+        var counter = 0;
+        while (node != null && counter < limit) {
+
+            if (first) {
+                first = false;
+                sb.append(node.getVal());
+            } else {
+                sb.append("->");
+                sb.append(node.getVal());
+            }
+            node = node.getNext();
+            counter++;
+        }
+        return sb.toString();
+    }
+
+    public static ListNode createListNodeNoCycle() {
+        var head = new ListNode(5);
+        var node1 = new ListNode(10);
+        var node2 = new ListNode(15);
+        head.next = node1;
+        node1.next = node2;
+        return head;
+    }
+
+    public static ListNode createListNodeCycle() {
+        var head = new ListNode(5);
+        var node1 = new ListNode(10);
+        var node2 = new ListNode(15);
+        head.next = node1;
+        node1.next = node2;
+        node2.next = head;
+        return head;
+    }
+
+
+    //head -> node1 -> tail => 10 -> 15 -> 20
+    public static void testLinkedList() {
+        var head = new ListNode(10);
+        var node1 = new ListNode(15);
+        var tail = new ListNode(20);
+        head.setNext(node1);
+        node1.setNext(tail);
+
+        System.out.println(linkedListAsString(head, 10));
+    }
+
 }
