@@ -6,6 +6,7 @@ import com.example.problems.ClimbingStairs;
 import com.example.problems.ContainsDuplicates;
 import com.example.problems.FindingDuplicates;
 import com.example.problems.FirstUniqueCharacter;
+import com.example.problems.HappyNumber;
 import com.example.problems.IntersectionOfTwoArrays;
 import com.example.problems.LinkedListCycle;
 import com.example.problems.MissingNumber;
@@ -18,6 +19,7 @@ import com.example.problems.SquaresOfSortedArray;
 import com.example.problems.TwoSum;
 import com.example.problems.ValidPalindrome;
 import com.example.problems.ValidParentheses;
+import org.w3c.dom.ls.LSOutput;
 
 import java.util.LinkedList;
 
@@ -187,6 +189,13 @@ public class Main {
         System.out.println("No cycle input: " + linkedListAsString(linkedListNoCycleInput, 10));
         System.out.println("Output cache algorithm: " + LinkedListCycle.cachingSolution(linkedListNoCycleInput));
         System.out.println("Output floyd algorithm: " + LinkedListCycle.floydCycleSolution(linkedListNoCycleInput));
+        hr();
+
+        System.out.println("19. Happy number");
+        var happyNumberInput = 19;
+        System.out.println("Input: " + happyNumberInput);
+        System.out.println("Output: " + HappyNumber.solution(happyNumberInput));
+        System.out.println("Floyd's cycle: " + HappyNumber.solution(happyNumberInput));
         hr();
 
 
